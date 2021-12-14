@@ -1,0 +1,34 @@
+<single-spa-router mode="history" base="/">
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+
+  <main>
+    <route path="statement">
+      <application name="@csx/data-center-statement"></application>
+    </route>
+
+    <route path="settings">
+      <application name="@csx/data-center-public"></application>
+    </route>
+  
+    <route default>
+      <h1>404 Not Found</h1>
+    </route>
+  </main>
+</single-spa-router>
